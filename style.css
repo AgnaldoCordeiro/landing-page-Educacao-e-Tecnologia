@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  margin-left: 5px;
+  color: rgb(13, 237, 245);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(13, 237, 245);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+body {
+  font-weight: 100%;
+  background: black;
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+.main-container {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(./images/tecnologia-educacao.jpg);
+  height: 600px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main-container .container {
+  margin-top: 10rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main-container .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main-container .titulo {
+  font-size: 40px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.section-container {
+  font-size: 16px;
+  height: 700px;
+  background-color: rgb(253, 236, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+.section-container .container {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-container .container p {
+  margin-left: 2rem;
+  font-size: 24px;
+}
+.section-container .container img {
+  height: 500px;
+}
