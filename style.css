@@ -140,6 +140,10 @@ p {
     display: flex;
     flex-direction: column;
   }
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -157,5 +161,9 @@ p {
   .contato {
     margin-top: 5px;
     width: 300px;
+  }
+  img {
+    height: 50%;
+    width: 100%;
   }
 }
