@@ -4,14 +4,23 @@
   font-family: "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(13, 13, 14, 0.657);
+
+  overflow: hidden;
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 header .logo {
   margin-left: 5px;
-  color: rgb(13, 237, 245);
+  color: rgb(16, 238, 238);
   font-family: "Arial Black", Times;
   font-size: 40px;
 }
@@ -32,12 +41,32 @@ body {
   font-family: "Arial", Times, serif;
   color: white;
 }
+h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  margin: 2rem;
+}
+p {
+  margin: 2rem;
+  font-size: 20px;
+}
 
 .main-container {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url(./images/tecnologia-educacao.jpg);
-  height: 600px;
+  height: 700px;
   background-size: cover;
 
   display: flex;
@@ -53,16 +82,18 @@ body {
 .main-container .descricao {
   margin-top: 10px;
   margin-bottom: 40px;
+  font-size: larger;
 }
 
 .main-container .titulo {
   font-size: 40px;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
-
+/* corpo*/
 .section-container {
+  padding-top: 2rem;
   font-size: 16px;
-  height: 700px;
+  height: auto;
   background-color: rgb(253, 236, 236);
   display: flex;
   flex-direction: column;
@@ -70,15 +101,61 @@ body {
   align-items: center;
   color: rgb(0, 0, 0);
 }
-.section-container .container {
-  margin: 5rem;
+
+.section-container .box .container {
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.section-container .container p {
-  margin-left: 2rem;
+.box .container p {
+  margin-left: 0.25rem;
   font-size: 24px;
 }
-.section-container .container img {
-  height: 500px;
+.box .container img {
+  height: 300px;
+}
+
+/* foooter */
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: #fff;
+}
+.a-footer {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-container .box .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contato {
+    margin-top: 5px;
+    width: 300px;
+  }
 }

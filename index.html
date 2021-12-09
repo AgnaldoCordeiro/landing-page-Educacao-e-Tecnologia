@@ -6,22 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Education</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h2 class="logo" id="inicio">Tech Education</h2>
+      <h1 class="logo">Tech Education</h1>
       <nav>
-        <a href="#inicio">Inicio</a>    
+        <a href="#inicio">Inicio</a>
         <a href="#sobre">Sobre</a>
         <a href="#contact">Contato</a>
       </nav>  
     </div>
   </header> 
-  <main> 
-  <div class="main-container">
-    <div class="container">
-      <h3 class="titulo">Tecnologia na Educação Hoje </h3>
+  <main id="inicio"> 
+  <div class="main-container" >
+    <div class="container animate__animated animate__backInLeft">
+      <h1 class="titulo" data-tilt>Tecnologia na Educação Hoje </h1>
       <p class="descricao">Por muito tempo a escola foi um espaço que oferecia métodos defasados de ensino, fundamentados em quadros-negros, livros
       e aulas completamente expositivas. Essa didática estava descontextualizada da vida dos jovens fora da instituição, e a
       partir daí surgiu a necessidade de aplicar a tecnologia na educação.
@@ -32,18 +35,21 @@
     </div>
   
   </div>
-  </main>
-  <section class="section-container">
-    <div class="container">
-      <img src="./images/tec-educ.jpg" alt="Estudantes"/>
-
-      <p>Uma metodologia que inova e transforma tecnologias em ferramentas pedagógicas pode prender muito mais a atenção do
-      estudante contemporâneo. Sendo assim, adaptar os sistemas educativos é cada vez mais necessário.      
-      
-      Pensando nisso, segue algumas informações sobre a importância da tecnologia no processo de ensino e aprendizagem
-    na escola. Confira!
-    </p>       
-    </div>    
+  </main>  
+  <section class="section-container" id="sobre">
+    <box class="box">
+      <div class="container">
+        <img src="./images/tec-educ.jpg" alt="Estudantes"
+         data-tilt data-tilt-glare data-tilt-max-glare="0.8"/>
+  
+        <p>Uma metodologia que inova e transforma tecnologias em ferramentas pedagógicas pode prender muito mais a atenção do
+        estudante contemporâneo. Sendo assim, adaptar os sistemas educativos é cada vez mais necessário.      
+        
+        Pensando nisso, segue algumas informações sobre a importância da tecnologia no processo de ensino e aprendizagem
+      na escola. Confira!
+      </p>       
+      </div>  
+    </box>
   </section>
   <section class="section-container">
     <div class="container-section">
@@ -57,7 +63,7 @@
         ensino.
         Evitar a presença deles não é mais uma opção, e é preciso integrá-los à educação da melhor forma possível.
   
-        Assim, os educadores ganham o auxílio de novas ferramentas para tornar as aulas mais instigantes, diferenciadas e
+        Assim, os educadores ganham o auxílio de novas ferramentas para tornar as aulas mais intrigantes, diferenciadas e
         participativas. O aluno, por sua vez, sente-se mais à vontade e motivado a estudar, aumentando sua autoestima.
   
         Como as opções são muitas, cabe ao professor buscar alternativas para trazer até a sala de aula os recursos que as
@@ -105,6 +111,18 @@
       Desse modo, a escola torna-se um local agradável de se frequentar, evitando, inclusive, a evasão escolar.</p>
     </div>
   </section>
+  <div class="container-footer" id="contact">
+    <footer class="footer">
   
+      <div>
+        <a class="a-footer" href="https://www.linkedin.com/in/agnaldo-gabriel-61527112a/" target="_blank"
+          rel="noreferrer">
+          <p>&copy; 2021 AgnaldoCordeiro • Direitos Reservados. Inc. Desenvolvido por AgnaldoCordeiro.</p>
+        </a>
+  
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
 </body>
 </html>
