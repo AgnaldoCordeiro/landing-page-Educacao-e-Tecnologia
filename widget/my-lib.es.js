@@ -17652,7 +17652,7 @@ function ScreenshotButton({
       className: "tw-p-1 tw-w-10 tw-h-10 tw-rounded-md tw-border-transparent tw-flex tw-justify-end tw-items-end tw-text-zinc-400 hover:tw-text-zinc-100 tw-transition-colors",
       style: {
         backgroundImage: `url(${screenshot})`,
-        backgroundSize: 180
+        backgroundSize: 50
       },
       onClick: () => onScreenshotTaken(null),
       children: /* @__PURE__ */ jsx(Trash$1, {
@@ -17703,7 +17703,7 @@ function FeedbackContentStep({
           className: "tw-w-4 tw-h-4"
         })
       }), /* @__PURE__ */ jsxs("span", {
-        className: "tw-font-sans tw-text-white tw-text-xl tw-leading-6 tw-flex tw-items-center tw-gap-2",
+        className: "tw-font-sans tw-text-white tw-text-x1 tw-leading-6 tw-flex tw-items-center tw-gap-2",
         children: [/* @__PURE__ */ jsx("img", {
           src: feedbackTypeInfo.image.source,
           alt: feedbackTypeInfo.image.alt,
@@ -17714,7 +17714,7 @@ function FeedbackContentStep({
       onSubmit: handleSubmitFeedback,
       className: "tw-my-4 tw-w-full",
       children: [/* @__PURE__ */ jsx("textarea", {
-        className: "tw-font-sans tw-py-0 tw-pt-2 tw-px-0 tw-pl-4 tw-min-w-[304px] tw-w-11/12 tw-min-h-[100px] tw-text-sm tw-placeholder-zinc-100 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-outline-none tw-resize-none scrollbar tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin",
+        className: "tw-pr-3 tw-font-sans tw-py-0 tw-pt-2 tw-px-0 tw-pl-4 tw-min-w-[304px] tw-w-11/12 tw-min-h-[100px] tw-text-sm tw-placeholder-zinc-100 tw-text-zinc-100 tw-border-zinc-600 tw-bg-transparent tw-rounded-md focus:tw-border-brand-500 focus:tw-ring-brand-500 focus:tw-ring-1 focus:tw-outline-none tw-resize-none scrollbar tw-scrollbar-thumb-zinc-700 tw-scrollbar-track-transparent tw-scrollbar-thin",
         placeholder: "Conte com detalhes o que est\xE1 acontecendo...",
         onChange: (event) => setComment(event.target.value)
       }), /* @__PURE__ */ jsxs("footer", {
