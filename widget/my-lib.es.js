@@ -17652,7 +17652,6 @@ function ScreenshotButton({
       className: "tw-p-1 tw-w-10 tw-h-10 tw-rounded-md tw-border-transparent tw-flex tw-justify-end tw-items-end tw-text-zinc-400 hover:tw-text-zinc-100 tw-transition-colors",
       style: {
         backgroundImage: `url(${screenshot})`,
-        backgroundPosition: "right bottom",
         backgroundSize: 180
       },
       onClick: () => onScreenshotTaken(null),
